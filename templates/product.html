@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="{% url 'adddb' %}" method="post">
+            {% csrf_token %}
+            <label>product name</label>
+            <input type="text" name="product_name"><br><br>
+            <label>product description</label>
+            <input type="text" name="product_desc"><br><br>
+            <label>Quantity</label>
+            <input type="number" name="product_quantity"><br><br>
+            <label>price</label>
+            <input type="number" name="price"><br><br>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>

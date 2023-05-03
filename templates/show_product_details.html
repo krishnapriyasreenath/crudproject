@@ -1,0 +1,84 @@
+<html>
+<head>
+
+</head>
+<body style="background-color: rgb(250, 235, 215);">
+    <centre>
+        <h1>Product Details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+
+                    </tr>
+            </thead>
+            <tbody>
+                {% for c in prd %}
+                <tr>
+                    <td>{{c.product_name}}</td>
+                    <td>{{c.description}}</td>
+                    <td>{{c.quantity}}</td>
+                    <td>{{c.price}}</td>
+                    <td><a href="{% url 'editpage' c.id %}">Edit</a></td>
+                    <td><a href="{% url 'deletepage' c.id %}">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </centre>
+     </table>
+     </body>
+     </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
